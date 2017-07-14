@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_payment_history_filter"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/menu_payment_history_filter">
+        <menu>
+            <group
+                android:id="@+id/menu_payment_history_filter_item_group"/>
+        </menu>
+    </item>
+</menu>

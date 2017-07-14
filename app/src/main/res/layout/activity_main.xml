@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_main"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <devlight.io.library.ntb.NavigationTabBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:ntb_badge_size="12sp"
+        app:ntb_badge_bg_color="@color/badge_bg_color"
+        app:ntb_bg_color="@color/colorPrimaryDark"
+        app:ntb_badge_title_color="@android:color/white"
+        app:ntb_inactive_color="@android:color/white"
+        app:ntb_badged="true"
+        android:layout_gravity="bottom"/>
+</LinearLayout>

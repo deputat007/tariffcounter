@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#67A4F4</color>
+    <color name="colorPrimaryDark">#62A1F1</color>
+    <color name="colorAccent">#9877FC</color>
+    <color name="colorAccentDark">#8161df</color>
+    <color name="colorTitle">#64739C</color>
+    <color name="current_ntb_item">#8CBEFD</color>
+    <color name="badge_bg_color">#ffff0000</color>
+    <color name="badge_title_color">#ffffff</color>
+    <color name="bg_color_white">#EFF6FC</color>
+    <color name="colorDays">#73A4E9</color>
+    <color name="light_green_500">#8bc34a</color>
+    <color name="red_600">#e53935</color>
+    <color name="amber_200">#ffe082</color>
+    <color name="green">#00ff00</color>
+    <color name="red">#ff0000</color>
+    <color name="dark_blue">#dc393984</color>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thehatefulsix.tariffcounter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".application.TariffCounter"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".activities.ServiceSettingsActivity"
+            android:label="@string/service_settings"/>
+
+        <activity android:name=".activities.ServiceProviderActivity"
+            android:label="@string/text_service_provider"/>
+
+        <activity
+            android:name=".activities.HouseSettingsActivity"
+            android:label="@string/app_settings" />
+
+        <activity
+            android:name=".activities.TariffSettingsActivity"
+            android:label="@string/rate_settings"/>
+
+        <activity android:name=".activities.SubsidySettingsActivity"
+            android:label="@string/text_subsidy_settings"/>
+
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIx7RGIeab5nAifW14lqieZlTzwpoXAzJo00vP8g" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+
+        <activity android:name=".activities.EditBillActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activities.EditNewsActivity" />
+
+        <receiver android:name=".broadcast_receiver.ServiceCheckupReceiver">
+            <intent-filter>
+                <action android:name="com.thehatefulsix.tariffcounter.SERVICE_CHECKUP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
