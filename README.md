@@ -13,8 +13,9 @@ Mobile application to facilitate payment of utility bills.
 - Butterknife
 - Glide
 - Notifications
+- VK SDK
 
 ## Credits
 * [NavigationTabBar](https://github.com/Devlight/NavigationTabBar)
 * [FAB](https://github.com/Clans/FloatingActionButton)
-
+* [CircleImageView](https://github.com/hdodenhof/CircleImageView)
